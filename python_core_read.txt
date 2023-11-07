@@ -1,0 +1,96 @@
+———————Python———————
+
+BASICS
+
+IDLE Shell - ( print statements, /, \n, r )
+
+List ( insert, pop, del, extends, remove, min, max, sum )
+
+Set & Tuples ( {}, () ), ( Mutable, Immutable ), ( Unordered + nd, Ordered + d)
+
+Dictionary ( key & values, Nd Keys, append, get(key,default), del dict(key), zip to merge )
+
+Memory allocation & deallocation ( address by using id(), garbage collector, type function )
+
+Data types ( numeric - int, float, complex. bool. sequence - list, typle, set, string, range. Dictionary )
+
+Operators ( arithmetic, assignment, unary ( - ), relational, logical )
+
+Number Systems ( bin, 0b, oct, hex )
+
+Bitwise Operator ( complement ~, and &, or |, xor ^ )
+
+Math Module & Creation & Execution of a python file ( pow, sort, floor, ceil )
+
+Input Function, Eval, sys.argv & Conversion 
+
+Conditional Statements ( if, elif, else )
+
+Loops & Keywords ( for, dowhile, while, break, continue, pass )
+
+Array Module ( array.array_name(code, []), operations are the same, for one D )
+
+Pip & Numpy ( gives power for numeric calculations to an array, view (s), copy() (d), creates 2-D as well, sin, cos, add 2, multi 2, array( [], data type ( optional ) ), dtype, mdin( no of dimensions ), shape ( r,c ), size, flatten, reshape ( upgrade dimension, 2, 2, 3 )
+
+Functions & Arguments ( returning of multiple values can be done, mutable, immutable, formal & actual arguments ( position, keywords, default, varargs (*) ) )
+
+Scoping ( global, local, how to use global variable ( global name_var or global()[specify variables] )
+
+Anonymous Function ( arrow, var = lambda a,b : a*b )
+
+Map, filter, reduce ( same as javascript, method_name(function, list_name) )
+
+Decorators ( adds extra functionality to the function if you don't have the access to the function so you do function inside the function and pass the function as a parameter ( you cannot change the function code but you can pass it ) make sure to return the inner function and inside the inner function return the function which you got as a parameter after applying the logic )
+
+Modules & Special Variable ( import mod_name, from package import module_name or *, special variable to specify that selected methods should be called only from the other module not executing all, _varname, if particular file will run inside that it will replace it with __main_ or whatever value you are giving else with package_name )
+
+Iterator & Generator ( to extract values one by one, generator helps to make iterator better we don't need to define our own class for that, define function and don't use return, use yeild to make the function generator it will take care of the remaining things, you can use loop on this as well as when you want to process data one by one it is going to be useful in that scenario, traditional iterator have __next__ method and to iterate on something iter() )
+
+Exception handling same as java except syntax like try, except ( catch ), finally
+
+Multithreading same as java just you have different way of implementing them ( import all from threading module then inherit Thread and override the run method and then call the start method, it comes with sleep, join etc methods same as java )
+
+File handling ( Open, Read, Write. Open - open(file_name, operation ( r, w, a, rb, wb ), Read - read(), readLine() ( one by one ), Write - write(), You can use for loop for reading and writing purpose as per the requirements, choose carefully when you are working with chars and binary in case of image ) 
+
+Python, PVM, Compiled & Interpreted
+
+
+OOPS
+
+	Classes & Objects ( design, real entity, have behaviours & attributes )
+
+	-	define class by class class_name:
+	-	define constructor by __init__(self):
+	-	create object of the class by var_name = class_name() ( calling constructor )
+	-	self refers to the current object just like this keyword in java
+	
+	Class variables & Instance variables 
+
+	-	don't have specific keyword but can directly define inside class like normal variable i.e class variable, can access via classname
+	-	instance variables are there already, you can use them with self keyword 
+
+	Class level method & Static method
+
+	-	normal method but to access class level variables use class level method by having decorator name as - classmethod just above the method
+	-	static method meant for common purpose just when you dont need to access any class level variables and instance variables you can use static method by defining cls inside parameter and having decorator as static method
+	-	decorator starts with @ just like annotation in java
+
+	Inner classes
+
+	-	defining a class inside a class 
+	-	you can create an object of a inner class by outclass.innerclass() or you create inner class object first with the help of outer and access info
+
+	Inheritance 
+
+	-	Super class <- Sub class
+	-	Single, Multilevel, Multiple ( classname ( classname ), method order resolution can be done on the basis of the first argument )
+
+	Polymorphism 
+
+	-	Duck typing, Method overloading ( Not here but can use it with different argument types ), Method Overriding ( Same )
+	-	Operator overloading ( change behviour of predefined methods by defining methods in a class for a object like __add__, __sub__, __mul__, __str__ )
+
+	Abstract classes
+
+	-	by default don't have but if we want then we have to import from ABC module along with abstract method
+	-	after importing if you want to declare abstract then use decorator as @abstractmethod and dont forget to put pass because that’s how it works
